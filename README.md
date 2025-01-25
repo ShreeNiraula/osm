@@ -1,4 +1,4 @@
-# Nominatim 4.5.0 Setup for OpenStreetMap: Nepal Map Data
+# Nominatim 4.5.0 Setup for Open Street Map: Nepal Map Data
 
 ###### Date: 24-Dec-2024 <br>
 
@@ -6,7 +6,7 @@
 
 #### [shreeniraula.com.np](https://shreeniraula.com.np/) | LinkedIn: [ShreeNiraula](https://www.linkedin.com/in/shreeniraula/) | Twitter: [@ShreeNiraula](https://twitter.com/ShreeNiraula) | YouTube: [@ShreeNiraula](https://www.youtube.com/@ShreeNiraula/)
 
-Welcome! This repository walks you through setting up Nominatim, a powerful geocoding tool that works with OpenStreetMap (OSM) data. This guide is specifically designed for Nepal, making it easy to set up and start using OSM data for geospatial services like location search, reverse geocoding, and more.
+Welcome! This repository walks you through setting up Nominatim, a powerful geocoding tool that works with Open Street Map (OSM) data. This guide is specifically designed for Nepal, making it easy to set up and start using OSM data for geospatial services like location search, reverse geocoding, and more.
 
 The setup includes everything you need, from installing dependencies to configuring PostgreSQL, setting up Nginx as a reverse proxy, and securing your server with HTTPS. Once set up, you'll have a fully functional Nominatim instance for your own geospatial needs.
 
@@ -15,7 +15,7 @@ The setup includes everything you need, from installing dependencies to configur
 Here are some key reasons why Nominatim is a great choice for your geocoding needs:
 
 - **Completely Free**: Nominatim is open-source, meaning you don't have to pay any licensing fees to use it, and you can modify it to suit your needs.
-- **Accurate and Up-to-Date**: It uses OpenStreetMap, which is constantly updated by contributors around the world, ensuring that the geographic data you’re working with is accurate and current.
+- **Accurate and Up-to-Date**: It uses Open Street Map, which is constantly updated by contributors around the world, ensuring that the geographic data you’re working with is accurate and current.
 - **Highly Customizable**: You can tweak the setup to focus on specific regions or change configurations to meet the needs of your application.
 - **Privacy-First**: By hosting your own instance of Nominatim, you maintain complete control over your data, offering you peace of mind in terms of privacy.
 - **Built for Scale**: Whether you're running a small app or handling a large number of requests, Nominatim is designed to scale easily, making it suitable for any project.
@@ -38,7 +38,7 @@ If you're ready to set up your own Nominatim instance, just follow the steps in 
 
 1. **Install Dependencies**: We'll walk you through installing PostgreSQL, PostGIS, osm2pgsql, and the necessary Python packages.
 2. **Set Up PostgreSQL**: We'll create the necessary users and databases for Nominatim and configure PostgreSQL.
-3. **Import OSM Data**: We provide steps to download and import the latest OpenStreetMap data for Nepal into your Nominatim database.
+3. **Import OSM Data**: We provide steps to download and import the latest Open Street Map data for Nepal into your Nominatim database.
 4. **Configure the Server**: Set up Nginx as a reverse proxy and secure the server with HTTPS.
 5. **Run Nominatim**: Finally, we guide you through running Nominatim as a Gunicorn application to make it available to your users.
 
@@ -322,9 +322,9 @@ sudo certbot --nginx -d osm.shreeniraula.com.np
 
 ##
 
-#### Querying OpenStreetMap API for Location Details and Reverse Geocoding in Kathmandu
+#### Querying Open Street Map API for Location Details and Reverse Geocoding in Kathmandu
 
-Query the OpenStreetMap API for the location 'Kathmandu' to get details in JSON format
+Query the Open Street Map API for the location 'Kathmandu' to get details in JSON format
 
 ```bash
 curl https://osm.shreeniraula.com.np/search?q=Kathmandu&format=json
@@ -336,4 +336,4 @@ Perform reverse geocoding by passing latitude and longitude to retrieve the addr
 curl https://osm.shreeniraula.com.np/reverse?lat=27.6892881&lon=85.2321257&format=json
 ```
 
-### Congratulations! You have successfully installed the Nominatim API with OpenStreetMap data.
+### Congratulations! You have successfully installed the Nominatim API with Open Street Map data.
